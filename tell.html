@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+        'sm': {'max': '412px'},
+      // => @media (max-width: 639px) { ... }
+    }
+      }
+    }
+  </script>
+</head>
+<body>
+    <div class="w-[100%] h-[80px]  flex justify-between items-center bg-[white] p-[0px_100px] sticky top-0  sm:flex sm:justify-between">
+    <img src="/Logo.png" class="w-[160px] ml-[20px] sm:ml-[-70px] sm:w-[200px]" alt="">
+    <div class="flex justify-between items-center w-[40%]">
+        <p class="text-[11px] sm:hidden">О компании</p>
+        <p class="text-[11px] sm:hidden">Новости</p>
+        <p class="text-[11px] sm:hidden">Документы</p>
+        <p class="text-[11px] sm:hidden">Контакты</p>
+    </div>
+    <p class="text-[11px] ml-[20px] sm:hidden"> <span class="text-[20px] font-[700]">+7 982 45-22-67 </span> <br>
+        Пн-Пт. с 8:00 до 19:00</p>
+        <img src="/Button.png" class="w-[50px] ml-[-30px] mt-[20px]  sm:hidden" alt="">
+        <div class="flex">
+        <button style="border-radius: 20px;" class="bg-sky-700 text-[white] w-[120px] h-[35px] hidden sm:block text-start pl-[20px] ml-[30px] pt-[5px]">Меню <img src="/img/2.png" class=" w-[20px] sm:relative left-[50px] bottom-[20px]  " alt=""></button>
+    </div>
+</div>
+<div style="background-image: url(/photo_2024-04-04_16-02-25.jpg); background-size: cover; background-position: center;" class="w-[100%] h-[400px] sm:w-[100%]">
+   <h1 class="text-[black] font-[600] text-[25px] p-[135px_190px]">Более <span class="text-[blue]">1000</span>  комфортных <br> квартир от 2,3 млн рублей  в <br> Дзержинском р-не Ярославля</h1>
+   <button style="border-radius: 20px;" class="w-[180px] h-[40px] bg-sky-700 p-[10px_10px] pt-[10px] text-[white]  text-[12px] relative bottom-[110px] left-[180px]">Выбрать квартиру <img src="/img/3.png" class="relative left-[145px] bottom-[12px]  w-[8px]" alt=""></button>
+   <button class="border-[1px] border-[black] text-[10px] font-[400] w-[160px] h-[30px] relative left-[190px] bottom-[110px] rounded-[50px] sm:w-[auto] h-">Получить консультацию</button>
+</div>
+</body>
+</html>
